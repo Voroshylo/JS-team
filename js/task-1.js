@@ -14,3 +14,18 @@
 // const tel = prompt("enter your tel");
 // const message = ` Користувач ${name}, використовує ${email}, та ${tel}. `;
 // console.log(message);
+
+// ЗАДАЧА 3
+// ПОТРІБНО ЗАПИТАТИ У МАГАЗИНІ ЦІНУ ЗА КОЖЕН ОКРЕМИЙ ТОВАР, ТА ВИВЕСТИ ПОВІДОМЛЕННЯМ   ЗАГАЛЬНУ ЦІНУ ТОВАРУ
+
+const price1 = Number(prompt("Enter price for first item"));
+const price2 = +prompt("Enter price for second item");
+const price3 = +prompt("Enter price for third item");
+
+const totalPrice = price1 + price2 + price3;
+
+const message = `The total price for three items is ${
+  price1 + price2 + price3
+}`;
+
+console.log(message);
