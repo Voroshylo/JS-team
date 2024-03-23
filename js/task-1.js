@@ -56,3 +56,20 @@
 
 // const firstNumber = number % 2 === 0 ? "Число парне" : "Число не парне";
 // console.log(firstNumber);
+
+// ЗАДАЧА 6
+// НАПИШІТЬ ПРОГРАМУ , ДЕ МИ У КОРИСТОВАЧА ПИТАЄМОСЬ МІСЯЦЬ НАРОДЖЕННЯ, І ПОКАЗУЄМО У ЯКУ ПОРУ РОКУ ВІН НАРОДИВСЯ
+
+let birthMonth = Number(prompt("Введіть ваш місяць народження"));
+
+if (birthMonth === 12 || birthMonth === 1 || birthMonth === 2) {
+  console.log("Ти народився зимою");
+} else if (birthMonth >= 3 && birthMonth <= 5) {
+  console.log("Ти народився весною");
+} else if (birthMonth >= 6 && birthMonth <= 8) {
+  console.log("Ти народився літом");
+} else if (birthMonth >= 9 && birthMonth <= 11) {
+  console.log("Ти народився осінню");
+} else {
+  console.log("Введіть вірний місяць вашого народження");
+}
