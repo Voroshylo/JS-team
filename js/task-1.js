@@ -57,6 +57,14 @@
 // const firstNumber = number % 2 === 0 ? "Число парне" : "Число не парне";
 // console.log(firstNumber);
 
+const number = Number(prompt("jhvbjvf"));
+if( number % 2 === 0){
+  console.log("hdhdf");
+} else {
+  console.log("hjdffhj")
+}
+const firstNumber =   number % 2 === 0 ? "hdhdf" : "hjdffhj";
+console.log(firstNumber);
 // ЗАДАЧА 6
 // НАПИШІТЬ ПРОГРАМУ , ДЕ МИ У КОРИСТОВАЧА ПИТАЄМОСЬ МІСЯЦЬ НАРОДЖЕННЯ, І ПОКАЗУЄМО У ЯКУ ПОРУ РОКУ ВІН НАРОДИВСЯ
 
@@ -80,20 +88,20 @@
 // ЯКЩО МІСЯЦЬ - ціна 10.99
 // ЯКЩО РІК - ціна 100.99
 
-const periodSubscription = prompt('Який у вас період підписки: день, тиждень, місяць чи рік?').toLowerCase();
-switch (periodSubscription) {
-  case "день":
-    console.log("1.99");
-    break;
-  case "тиждень":
-    console.log("5.99");
-    break;
-  case "місяць":
-    console.log("10.99");
-    break;
-  case "рік":
-    console.log("100.99");
-    break;
-  default: 
-    console.log("Error");
-}
+// const periodSubscription = prompt('Який у вас період підписки: день, тиждень, місяць чи рік?').toLowerCase();
+// switch (periodSubscription) {
+//   case "день":
+//     console.log("1.99");
+//     break;
+//   case "тиждень":
+//     console.log("5.99");
+//     break;
+//   case "місяць":
+//     console.log("10.99");
+//     break;
+//   case "рік":
+//     console.log("100.99");
+//     break;
+//   default: 
+//     console.log("Error");
+// }
