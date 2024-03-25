@@ -57,8 +57,6 @@
 // // // const firstNumber = number % 2 === 0 ? "Число парне" : "Число не парне";
 // // // console.log(firstNumber);
 
-// // // ЗАДАЧА 6
-// // // НАПИШІТЬ ПРОГРАМУ , ДЕ МИ У КОРИСТОВАЧА ПИТАЄМОСЬ МІСЯЦЬ НАРОДЖЕННЯ, І ПОКАЗУЄМО У ЯКУ ПОРУ РОКУ ВІН НАРОДИВСЯ
 
 // // // let birthMonth = Number(prompt("Введіть ваш місяць народження"));
 
@@ -97,6 +95,7 @@
 // //   default:
 // //     console.log("Error");
 // // }
+
 
 // // function normalizeInput(input, to) {
 // //   if (to === "upper") {
@@ -161,12 +160,18 @@
 // // }
 // // console.log(number)
 
-function calculateTotal(number) {
-  let total = 0;
-  for (let i = 1; i <= number; i++){
-    total += i;
-  }
-  return total
+// function calculateTotal(number) {
+//   let total = 0;
+//   for (let i = 1; i <= number; i++){
+//     total += i;
+//   }
+//   return total
+// }
+// console.log(calculateTotal(1));
+// console.log(calculateTotal(7));
+
+function calculateTotalPrice(order) {
+  for(let i = 0; i < order.length; i++);
+  return i;
 }
-console.log(calculateTotal(1));
-console.log(calculateTotal(7));
+
