@@ -170,8 +170,41 @@
 // console.log(calculateTotal(1));
 // console.log(calculateTotal(7));
 
-function calculateTotalPrice(order) {
-  for(let i = 0; i < order.length; i++);
-  return i;
-}
+// function calculateTotalPrice(order) {
+//   let totalPrice = 0;
+//   for(let i = 0; i < order.length; i++) {
+//     totalPrice += order[i];
+//   }
+//   return totalPrice;
+// }
+// console.log(calculateTotalPrice([12, 85, 37, 4]))
 
+// function getEvenNumbers(start, end) {
+//   for(let i = 0; i < 10 % 2 === 0; i++)
+// }
+
+// function getEvenNumbers(start, end) {
+//   for (let i = start; i <= end; i++){
+//     if (i % 2 === 0);
+//   }
+//     return i;
+// }
+// console.log(getEvenNumbers(2, 5))
+
+// function checkStorage(storage, item) {
+//   if (storage.includes(item.toLowerCase())) {
+//     return `${item.toLowerCase()} is available to order!`;
+//   }
+//   else {
+//     return "Sorry! We are out of stock!";
+//   }
+// }
+// console.log(checkStorage(["apple", "plum", "pear"], "plum"));
+// console.log(checkStorage(["apple", "plum", "pear"], "PluM"));
+// console.log(checkStorage(["apple", "plum", "pear"], "OrAnge"));
+
+const planets = ["Earth", "Mars", "Venus"];
+
+for (const planet of planets) {
+  console.log(planet);
+}
