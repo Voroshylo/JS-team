@@ -203,8 +203,56 @@
 // console.log(checkStorage(["apple", "plum", "pear"], "PluM"));
 // console.log(checkStorage(["apple", "plum", "pear"], "OrAnge"));
 
-const planets = ["Earth", "Mars", "Venus"];
+// const planets = ["Earth", "Mars", "Venus"];
 
-for (const planet of planets) {
-  console.log(planet);
+// for (const planet of planets) {
+//   console.log(planet);
+// }
+// const book = {
+//   title: "The Last Kingdom",
+//   author: "Bernard Cornwell",
+//   rating: 8.38,
+// };
+// console.log(Object.keys(book))
+// console.log(Object.values(book))
+
+// function countTotalSalary(salaries) {
+//   let totalSalary = 0;
+//   for (const item of Object.values(salaries)) {
+//     totalSalary += item
+//   }
+//   return totalSalary;
+// }
+// console.log(countTotalSalary({ mango: 100, poly: 150, alfred: 80 }))
+
+// const colors = [
+//   { hex: "#f44336", rgb: "244,67,54" },
+//   { hex: "#2196f3", rgb: "33,150,243" },
+//   { hex: "#4caf50", rgb: "76,175,80" },
+//   { hex: "#ffeb3b", rgb: "255,235,59" },
+// ];
+
+// const hexColors = [];
+// const rgbColors = [];
+// for(const color of colors){
+//   hexColors.push(color.hex);
+//   rgbColors.push(color.rgb)
+// }
+// console.table(hexColors)
+// console.table(rgbColors)
+
+const books = [
+  { title: "The Last Kingdom", author: "Bernard Cornwell" },
+  { title: "Beside Still Waters", author: "Robert Sheckley" },
+  { title: "The Dream of a Ridiculous Man", author: "Fyodor Dostoevsky" }
+];
+
+const authorToSearchFor = "Robert Sheckley";
+
+for (const book of books) {
+	if(book.author === authorToSearchFor) {
+		console.log(book);
+		console.log(book.title)
+		console.log(book.rating)
+	}
 }
