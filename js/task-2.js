@@ -14,11 +14,26 @@
 // Рэп, Регги, Классика, Рок-н-ролл
 
 
-const styles = ["Джаз", "Блюз"];
-styles.push("Рок-н-ролл");
-styles.splice(1, 1, "Классика");
-styles.shift();
-styles.unshift("Рэп", "«Регги»");
+// const styles = ["Джаз", "Блюз"];
+// styles.push("Рок-н-ролл");
+// styles.splice(1, 1, "Классика");
+// styles.shift();
+// styles.unshift("Рэп", "«Регги»");
 
 
-console.log(styles);
+// console.log(styles);
+
+// ЗАДАЧА 2
+// використовуючи цикл for , який для кожного елемента масива буде виводити в консоль 
+// повідомлення у форматі <індекс елемента> та <значення елемента>.
+// Номерація для кожного елемента масива ['Mango', 'Poly', 'Ajax'] з індексом 0 буде виведено 1 - Mango, а для индекса 2 виведе 3 - Ajax.
+
+function indexElement () {
+    let indexes = ['Mango', 'Poly', 'Ajax'];
+
+    for(const index of indexes) {
+        console.log(`${indexes.indexOf(index)} - ${index}`);
+    }
+}
+
+indexElement();
