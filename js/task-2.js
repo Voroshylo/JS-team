@@ -57,16 +57,31 @@
 
 // console.log(smallestNumber);
 
-function findSmallestNumber(numbers) {
-    let smallestNumber = numbers[0];
+// function findSmallestNumber(numbers) {
+//     let smallestNumber = numbers[0];
 
-for (let i = 0; i < numbers.length; i++) {
-    if (smallestNumber > numbers[i]) {
-        smallestNumber = numbers[i];
-    }
-}
-    return smallestNumber;
-}
+// for (let i = 0; i < numbers.length; i++) {
+//     if (smallestNumber > numbers[i]) {
+//         smallestNumber = numbers[i];
+//     }
+// }
+//     return smallestNumber;
+// }
 
-console.log(findSmallestNumber([2, 17, 94, 1, 23, 37]));
-console.log(findSmallestNumber([49, 4, 83, 7, 12]));
+// console.log(findSmallestNumber([2, 17, 94, 1, 23, 37]));
+// console.log(findSmallestNumber([49, 4, 83, 7, 12]));
+
+// ЗАДАЧА 4
+//  Провірте , чи являється рядок полідромом
+// const str = "ротатор";//true
+// const newString = "Hello";//false
+
+const str = "ротатор";
+const newString = "Hello";
+let revercedStr = newString.split("").reverse().join("");
+
+if (newString === revercedStr) {
+    console.log(true);
+} else {
+    console.log(false);
+}
