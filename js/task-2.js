@@ -76,12 +76,44 @@
 // const str = "ротатор";//true
 // const newString = "Hello";//false
 
-const str = "ротатор";
-const newString = "Hello";
-let revercedStr = newString.split("").reverse().join("");
+// const str = "ротатор";
+// const newString = "Hello";
+// let revercedStr = newString.split("").reverse().join("");
 
-if (newString === revercedStr) {
-    console.log(true);
-} else {
-    console.log(false);
+// if (newString === revercedStr) {
+//     console.log(true);
+// } else {
+//     console.log(false);
+// }
+// ЗАДАЧА 6
+// Напишіть ф-цію greet(name) , яка при виклику буде получати імя (як приклад , "Василь"), і логінувати рядок "Привіт, <імя>".У випадку , відсутнього 
+// відсутнього значення, виводе аргумент "Привіт , гість"
+// // 
+
+// function greet(name = "гість"){
+// return ` Привіт, ${name}`;
+// }console.log(greet("Василь"));
+//  console.log(greet());
+
+//  Напишіть ф-цію capitalize , яка буде приймати рядок і буде повертати новий рядок , де кожне слово буде з великої букви
+console.log(capitalize('the quick brown fox'))// 'The Quick Brown Fox '
+
+function capitalize (string){
+    const arrayFromString = string.split(" ")
+    let rey = [];
+    // console.log(arrayFromString);
+    for(const word of arrayFromString){
+        let up = word[0].toUpperCase()
+        console.log(up);
+        let restString = word.slice(1);
+        console.log(restString)
+        let final = `${up}${restString}`
+        console.log(final)
+        rey.push(final)
+    }
+    return rey.join(" ");
+    
+
+
+
 }
