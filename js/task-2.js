@@ -76,12 +76,29 @@
 // const str = "ротатор";//true
 // const newString = "Hello";//false
 
-const str = "ротатор";
-const newString = "Hello";
-let revercedStr = newString.split("").reverse().join("");
+// const str = "ротатор";
+// const newString = "Hello";
+// let revercedStr = newString.split("").reverse().join("");
 
-if (newString === revercedStr) {
-    console.log(true);
-} else {
-    console.log(false);
+// if (newString === revercedStr) {
+//     console.log(true);
+// } else {
+//     console.log(false);
+// }
+
+// ЗАДАЧА 5
+// Напишіть ф-цію calculateAverage() яка приймає довільну кількість аргументів і повертає їх середнє значення .Всі аргументи будуть тільки числовими
+
+
+
+function calculateAverage(...numbers) {
+  let newNumber = 0
+  for (let i = 0; i < numbers.length; i++){
+    newNumber += numbers[i]
+  }
+  return newNumber / numbers.length;
 }
+
+console.log(calculateAverage(1, 2, 3, 4)); // 2.5
+console.log(calculateAverage(14, 8, 2)); // 8
+console.log(calculateAverage(27, 43, 2, 8, 36));// 23.2
