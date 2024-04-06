@@ -241,18 +241,71 @@
 // console.table(hexColors)
 // console.table(rgbColors)
 
-const books = [
-  { title: "The Last Kingdom", author: "Bernard Cornwell" },
-  { title: "Beside Still Waters", author: "Robert Sheckley" },
-  { title: "The Dream of a Ridiculous Man", author: "Fyodor Dostoevsky" }
-];
+// const books = [
+//   { title: "The Last Kingdom", author: "Bernard Cornwell" },
+//   { title: "Beside Still Waters", author: "Robert Sheckley" },
+//   { title: "The Dream of a Ridiculous Man", author: "Fyodor Dostoevsky" }
+// ];
 
-const authorToSearchFor = "Robert Sheckley";
+// const authorToSearchFor = "Robert Sheckley";
 
-for (const book of books) {
-	if(book.author === authorToSearchFor) {
-		console.log(book);
-		console.log(book.title)
-		console.log(book.rating)
-	}
-}
+// for (const book of books) {
+// 	if(book.author === authorToSearchFor) {
+// 		console.log(book);
+// 		console.log(book.title)
+// 		console.log(book.rating)
+// 	}
+// }
+
+// function getProductPrice(productName) {
+//   const products = [
+//     { name: "Radar", price: 1300, quantity: 4 },
+//     { name: "Scanner", price: 2700, quantity: 3 },
+//     { name: "Droid", price: 400, quantity: 7 },
+//     { name: "Grip", price: 1200, quantity: 9 },
+//   ];
+
+// for (const product of products) {
+// 	if (product.name === productName) {
+// 		return product.price;
+// 	}
+// 	}
+// 	return null
+// 	}
+// console.log(getProductPrice("Grip"));
+// console.log(getProductPrice("Grip"));
+// console.log(getProductPrice("Scanner"))
+
+// function getAllPropValues(propName) {
+//   const products = [
+//     { name: "Radar", price: 1300, quantity: 4 },
+//     { name: "Scanner", price: 2700, quantity: 3 },
+//     { name: "Droid", price: 400, quantity: 7 },
+//     { name: "Grip", price: 1200, quantity: 9 },
+//   ];
+// let values = [];
+//   for (const product of products) {
+//     if (Object.keys(product).includes(propName)) {
+//       values.push(product[propName])
+//     }
+//   }
+//   return values;
+// }
+// console.log(getAllPropValues("name"))
+
+// function calculateTotalPrice(productName) {
+//   const products = [
+//     { name: "Radar", price: 1300, quantity: 4 },
+//     { name: "Scanner", price: 2700, quantity: 3 },
+//     { name: "Droid", price: 400, quantity: 7 },
+//     { name: "Grip", price: 1200, quantity: 9 },
+//   ];
+//   for (const product of products) {
+//     if (product.name === productName) {
+//       return product.price * product.quantity;
+//     }
+//   }
+//   return `Product ${productName} not found!`;
+// }
+// console.log(calculateTotalPrice("Blaster"));
+// console.log(calculateTotalPrice("Radar"));
