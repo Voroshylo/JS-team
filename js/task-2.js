@@ -86,19 +86,35 @@
 //     console.log(false);
 // }
 
-// ЗАДАЧА 5
-// Напишіть ф-цію calculateAverage() яка приймає довільну кількість аргументів і повертає їх середнє значення .Всі аргументи будуть тільки числовими
+// ЗАДАЧА 6
+// Напишіть ф-цію greet(name) , яка при виклику буде получати імя (як приклад , "Василь"), і логінувати рядок "Привіт, <імя>".У випадку , відсутнього 
+// відсутнього значення, виводе аргумент "Привіт , гість"
+// // 
+
+// function greet(name = "гість"){
+// return ` Привіт, ${name}`;
+// }console.log(greet("Василь"));
+//  console.log(greet());
+
+//  Напишіть ф-цію capitalize , яка буде приймати рядок і буде повертати новий рядок , де кожне слово буде з великої букви
+console.log(capitalize('the quick brown fox'))// 'The Quick Brown Fox '
+
+function capitalize (string){
+    const arrayFromString = string.split(" ")
+    let rey = [];
+    // console.log(arrayFromString);
+    for(const word of arrayFromString){
+        let up = word[0].toUpperCase()
+        console.log(up);
+        let restString = word.slice(1);
+        console.log(restString)
+        let final = `${up}${restString}`
+        console.log(final)
+        rey.push(final)
+    }
+    return rey.join(" ");
+    
 
 
 
-function calculateAverage(...numbers) {
-  let newNumber = 0
-  for (let i = 0; i < numbers.length; i++){
-    newNumber += numbers[i]
-  }
-  return newNumber / numbers.length;
 }
-
-console.log(calculateAverage(1, 2, 3, 4)); // 2.5
-console.log(calculateAverage(14, 8, 2)); // 8
-console.log(calculateAverage(27, 43, 2, 8, 36));// 23.2
