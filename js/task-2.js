@@ -96,24 +96,24 @@
 //  console.log(greet());
 
 //  Напишіть ф-цію capitalize , яка буде приймати рядок і буде повертати новий рядок , де кожне слово буде з великої букви
-console.log(capitalize('the quick brown fox'))// 'The Quick Brown Fox '
+// console.log(capitalize('the quick brown fox'))// 'The Quick Brown Fox '
 
-function capitalize (string){
-    const arrayFromString = string.split(" ")
-    let rey = [];
-    // console.log(arrayFromString);
-    for(const word of arrayFromString){
-        let up = word[0].toUpperCase()
-        console.log(up);
-        let restString = word.slice(1);
-        console.log(restString)
-        let final = `${up}${restString}`
-        console.log(final)
-        rey.push(final)
-    }
-    return rey.join(" ");
+// function capitalize (string){
+//     const arrayFromString = string.split(" ")
+//     let rey = [];
+//     // console.log(arrayFromString);
+//     for(const word of arrayFromString){
+//         let up = word[0].toUpperCase()
+//         console.log(up);
+//         let restString = word.slice(1);
+//         console.log(restString)
+//         let final = `${up}${restString}`
+//         console.log(final)
+//         rey.push(final)
+//     }
+//     return rey.join(" ");
     
 
 
 
-}
+// }
