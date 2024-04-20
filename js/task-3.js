@@ -29,92 +29,92 @@
 // console.log(product);
 // }
 
-const scientists = [
-    {
-      name: "Albert",
-      surname: "Einstein",
-      born: 1879,
-      dead: 1955,
-      id: 1,
-    },
-    {
-      name: "Isaac",
-      surname: "Newton",
-      born: 1643,
-      dead: 1727,
-      id: 2,
-    },
-    {
-      name: "Galileo",
-      surname: "Galilei",
-      born: 1564,
-      dead: 1642,
-      id: 3,
-    },
-{
-      name: "Marie",
-      surname: "Curie",
-      born: 1867,
-      dead: 1934,
-      id: 4,
-    },
-    {
-      name: "Johannes",
-      surname: "Kepler",
-      born: 1571,
-      dead: 1630,
-      id: 5,
-    },
-    {
-      name: "Nicolaus",
-      surname: "Copernicus",
-      born: 1473,
-      dead: 1543,
-      id: 6,
-    },
-{
-      name: "Max",
-      surname: "Planck",
-      born: 1858,
-      dead: 1947,
-      id: 7,
-    },
-    {
-      name: "Katherine",
-      surname: "Blodgett",
-      born: 1898,
-      dead: 1979,
-      id: 8,
-    },
-    {
-      name: "Ada",
-      surname: "Lovelace",
-      born: 1815,
-      dead: 1852,
-      id: 9,
-    },
-{
-      name: "Lise",
-      surname: "Meitner",
-      born: 1878,
-      dead: 1968,
-      id: 11,
-    },
-    {
-      name: "Sarah E.",
-      surname: "Goode",
-      born: 1855,
-      dead: 1905,
-      id: 10,
-    },
-    {
-      name: "Hanna",
-      surname: "Hammarström",
-      born: 1829,
-      dead: 1909,
-      id: 12,
-    },
-  ];
+// const scientists = [
+//     {
+//       name: "Albert",
+//       surname: "Einstein",
+//       born: 1879,
+//       dead: 1955,
+//       id: 1,
+//     },
+//     {
+//       name: "Isaac",
+//       surname: "Newton",
+//       born: 1643,
+//       dead: 1727,
+//       id: 2,
+//     },
+//     {
+//       name: "Galileo",
+//       surname: "Galilei",
+//       born: 1564,
+//       dead: 1642,
+//       id: 3,
+//     },
+// {
+//       name: "Marie",
+//       surname: "Curie",
+//       born: 1867,
+//       dead: 1934,
+//       id: 4,
+//     },
+//     {
+//       name: "Johannes",
+//       surname: "Kepler",
+//       born: 1571,
+//       dead: 1630,
+//       id: 5,
+//     },
+//     {
+//       name: "Nicolaus",
+//       surname: "Copernicus",
+//       born: 1473,
+//       dead: 1543,
+//       id: 6,
+//     },
+// {
+//       name: "Max",
+//       surname: "Planck",
+//       born: 1858,
+//       dead: 1947,
+//       id: 7,
+//     },
+//     {
+//       name: "Katherine",
+//       surname: "Blodgett",
+//       born: 1898,
+//       dead: 1979,
+//       id: 8,
+//     },
+//     {
+//       name: "Ada",
+//       surname: "Lovelace",
+//       born: 1815,
+//       dead: 1852,
+//       id: 9,
+//     },
+// {
+//       name: "Lise",
+//       surname: "Meitner",
+//       born: 1878,
+//       dead: 1968,
+//       id: 11,
+//     },
+//     {
+//       name: "Sarah E.",
+//       surname: "Goode",
+//       born: 1855,
+//       dead: 1905,
+//       id: 10,
+//     },
+//     {
+//       name: "Hanna",
+//       surname: "Hammarström",
+//       born: 1829,
+//       dead: 1909,
+//       id: 12,
+//     },
+//   ];
 
   // 1)получити масив вчених які народились у 19ст;
 
@@ -175,80 +175,194 @@ const scientists = [
 // console.log(lalala);
 
 
-ЗАДАЧА 3
-Напиши клас Storage який створює об'єкти для керування складом товарів.
-При виклику отримуватиме один аргумент - початковий масив товарів, і записуватиме його у властивість items.
-Добавте методи класу:
-
-getItems() - повертає масив товарів.
-addItem(item) - отримує новий товар та додає його до поточних.
-removeItem(item) - отримає товар і, якщо він є, видаляє його з поточних.
-
-const items = new Storage(["Виноград", "Банани", "Кокоси", "Ківі"]);
-items.addItem("Манго");
-items.removeItem("Ківі")
 
 
-ЗАДАЧА 4
-Напиши клас Client який створює об'єкт із властивостями login і email.
-Оголоси приватні властивості #login і #email, доступ до яких зроби через геттер та сеттер login і email.
 
-ЗАДАЧА НА ЗАМИКАННЯ 5
-У вас є функція counter(), яка повинна повернути нове значення лічильника кожного разу,
-    коли вона викликається.Проте, коли ви викликаєте counter() два рази, вона повертає одне і те ж значення.
-    Ви хочете, щоб кожен виклик counter() повертав нове значення лічильника. 
-Використовуючи замикання, напишіть функцію, яка розв'язує цю проблему.
+// ЗАДАЧА 3
+// Напиши клас Storage який створює об'єкти для керування складом товарів.
+// При виклику отримуватиме один аргумент - початковий масив товарів, і записуватиме його у властивість items.
+// Добавте методи класу:
+
+// getItems() - повертає масив товарів.
+// addItem(item) - отримує новий товар та додає його до поточних.
+// removeItem(item) - отримає товар і, якщо він є, видаляє його з поточних.
+
+// class Storage {
+//   constructor(fru) {
+//     this.fruits = fru;
+//   }
+
+//   getItems() {
+//     return this.fruits;
+//   }
+
+//   addItem(item) {
+//     this.fruits.push(item);
+//   }
+
+//   removeItem(item) {
+//     const index = this.fruits.indexOf(item);
+//     if (index !== -1) {
+//         this.fruits.splice(index, 1);
+//     }
+//   }
+// }
+
+// const items = new Storage(["Виноград", "Банани", "Кокоси", "Ківі"]);
+// console.log(items.getItems());
+
+// items.addItem("Манго");
+// console.log(items.getItems());
+// items.removeItem("Ківі")
+// console.log(items.getItems());
 
 
-ЗАДАЧА 6
-Сортування примітивів.
-Виконати сортування масиву цін зі спадання та зростання.
-const prices = [2, 14, 1, 37, 26, 8];
-
-ЗАДАЧА 7
-Виконати сортування масиву назв моніторів в алфавітному та зворотному алфавітному порядку.
-const items = ["SAMSUNG", "LG", "ASUS", "DELL", "BENQ"];
 
 
-ЗАДАЧА 8
-Зібрати в allTopics масив усіх предметів всіх курсів використовуючи flatMap.
-Використовуючи Array.prototype.filter виконати фільтрацію,
-    залишивши в uniqueTopics тільки унікальні елементи.
 
-const courses = [
-  {
-    name: "Basic HTML+CSS",
-    topics: ["VSCode", "HTML", "CSS", "GitHub Desktop", "GitHub"],
-  },
-  {
-    name: "Intermediate HTML+CSS",
-    topics: ["VSCode", "Terminal", "Git", "GitHub", "HTML", "CSS"],
-  },
-  {
-    name: "Basic JavaScript",
-    topics: [
-      "VSCode",
-      "Type system",
-      "Loops",
-      "Functions",
-      "Conditions",
-      "Classes",
-      "DOM",
-      "Git",
-      "GitHub",
-    ],
-  },
-  {
-    name: "Intermediate JavaScript",
-    topics: [
-      "VSCode",
-      "NPM",
-      "Bundlers",
-      "Transpiling",
-      "Promises",
-      "AJAX",
-      "Git",
-      "GitHub",
-    ],
-  },
-];
+
+// ЗАДАЧА 4
+// Напиши клас Client який створює об'єкт із властивостями login і email.
+// Оголоси приватні властивості #login і #email, доступ до яких зроби через геттер та сеттер login і email.
+
+// class Client {
+//   #login;
+//   #email;
+
+//   constructor(params) {
+//     this.#login = params.login;
+//     this.#email = params.email;
+//   }
+
+//   get login() {
+//     return this.#login;
+//   }
+
+//   set login(newLogin) {
+//     this.#login = newLogin;
+//   }
+
+//   get email() {
+//     return this.#email;
+//   }
+
+//   set email(newEmail) {
+//     this.#email = newEmail;
+//   }
+// }
+
+// const user1 = new Client({login: 'ghost_kato', email: 'ghost_kato@gmail.com'})
+// console.log(user1);
+// console.log(user1.login);
+// console.log(user1.email);
+
+// user1.login = 'ghost';
+// user1.email = 'gmail.com';
+// console.log(user1);
+
+
+
+
+
+
+// ЗАДАЧА 6
+// Сортування примітивів.
+// Виконати сортування масиву цін зі спадання та зростання.
+// const prices = [2, 14, 1, 37, 26, 8];
+// const arr = prices.toSorted((a, b) => a - b);
+// const arrRev = prices.toSorted((a, b) => b - a);
+
+// console.log(arr);
+// console.log(arrRev);
+
+
+
+// ЗАДАЧА 7
+// Виконати сортування масиву назв моніторів в алфавітному та зворотному алфавітному порядку.
+// const items = ["SAMSUNG", "LG", "ASUS", "DELL", "BENQ"];
+
+// const arr = items.toSorted((a, b) => a.localeCompare(b));
+// const arr2 = items.toSorted((a, b) => b.localeCompare(a));
+
+// console.log(arr);
+// console.log(arr2);
+
+
+
+
+
+// ЗАДАЧА 8
+// Зібрати в allTopics масив усіх предметів всіх курсів використовуючи flatMap.
+// Використовуючи Array.prototype.filter виконати фільтрацію,
+//     залишивши в uniqueTopics тільки унікальні елементи.
+
+// const courses = [
+//   {
+//     name: "Basic HTML+CSS",
+//     topics: ["VSCode", "HTML", "CSS", "GitHub Desktop", "GitHub"],
+//   },
+//   {
+//     name: "Intermediate HTML+CSS",
+//     topics: ["VSCode", "Terminal", "Git", "GitHub", "HTML", "CSS"],
+//   },
+//   {
+//     name: "Basic JavaScript",
+//     topics: [
+//       "VSCode",
+//       "Type system",
+//       "Loops",
+//       "Functions",
+//       "Conditions",
+//       "Classes",
+//       "DOM",
+//       "Git",
+//       "GitHub",
+//     ],
+//   },
+//   {
+//     name: "Intermediate JavaScript",
+//     topics: [
+//       "VSCode",
+//       "NPM",
+//       "Bundlers",
+//       "Transpiling",
+//       "Promises",
+//       "AJAX",
+//       "Git",
+//       "GitHub",
+//     ],
+//   },
+// ];
+// const allTopics = courses.flatMap(course => course.topics);
+
+
+// const uniqueTopics = allTopics.filter((topic, index, array) => array.indexOf(topic) === index);
+
+// console.log(allTopics);
+// console.log(uniqueTopics);
+
+
+
+
+
+// ЗАДАЧА НА ЗАМИКАННЯ 5
+// У вас є функція counter(), яка повинна повернути нове значення лічильника кожного разу,
+//     коли вона викликається.Проте, коли ви викликаєте counter() два рази, вона повертає одне і те ж значення.
+//     Ви хочете, щоб кожен виклик counter() повертав нове значення лічильника.
+// Використовуючи замикання, напишіть функцію, яка розв'язує цю проблему.
+
+
+// function counter() {    
+//     let count = 0;
+    
+//     return function() {
+//         count += 1;
+//         return count;
+//     };
+// }
+
+// const newCounter = counter();
+
+// console.log(newCounter());
+// console.log(newCounter());
+
