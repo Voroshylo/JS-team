@@ -1,4 +1,4 @@
-// ЗАДАЧА 1 
+// ЗАДАЧА 1
 // Створіть карточки товару з масиву використовуючи createElement
 
 // js/
@@ -15,7 +15,7 @@
 //       price: 1200000,
 //       description:
 //         'Як і всі моделі Jeep - володіє безпрецедентним поєднанням ходових якостей, комфортності та міського шику. 2,4-літровий бензиновий двигун в поєднанні з шестиступінчастою автоматичною коробкою передач, яка відрізняється плавністю перемикання.',
-      
+
 //     },
 //     {
 //       name: 'toyota',
@@ -36,28 +36,70 @@
 // html/
 // <ul class="js-goods"></ul>
 
-import car from "./data/car.js";
-console.log(car);
+// import car from "./data/car.js";
+// console.log(car);
 
-const container = document.querySelector(".js-goods");
+// const container = document.querySelector(".js-goods");
 
-function functionContainer({name, img, price, description}) {
-    const liElement = document.createElement("li");
-    const pElement = document.createElement("p");
-    pElement.textContent = description;
-    const hElement = document.createElement("h2");
-    hElement.textContent = name;
-    const imgElement = document.createElement("img");
-    imgElement.src = img;
-    imgElement.alt = name;
-    imgElement.width = 350;
-    const priceElement = document.createElement("p");
-    priceElement.textContent = price;
-    liElement.appendChild(imgElement, hElement, pElement, priceElement);
-    return liElement;
-}
+// function functionContainer({name, img, price, description}) {
+//     const liElement = document.createElement("li");
+//     const pElement = document.createElement("p");
+//     pElement.textContent = description;
+//     const hElement = document.createElement("h2");
+//     hElement.textContent = name;
+//     const imgElement = document.createElement("img");
+//     imgElement.src = img;
+//     imgElement.alt = name;
+//     imgElement.width = 350;
+//     const priceElement = document.createElement("p");
+//     priceElement.textContent = price;
+//     liElement.appendChild(imgElement, hElement, pElement, priceElement);
+//     return liElement;
+// }
 
-const elements = car.map(functionContainer);
-console.log(elements);
+// const elements = car.map(functionContainer);
+// console.log(elements);
 
-container.append(...elements);
+// container.append(...elements);
+
+// ЗАДАЧА 2
+// 2.1НАПИШІТЬ КАЛЬКУЛЯТОР, ЯКИЙ БУДЕ РАХУВАТИ ЦІНУ ШАШЛИКА, В ЗАЛЕЖНОСТІ ВІД ЦІНИ ЗА КІЛОГРАМ І КІЛЬКОСТІ КУПЛЕНОГО ПРОДУКТА , І БУДЕ ВИВОДИТИ РЕЗУЛЬТАТ НА ЕКРАН
+
+// const container = document.querySelector(".container");
+// const form = document.querySelector(".form");
+// const price = document.querySelector("#price");
+// const amount = document.querySelector(".amount");
+// const userInput = document.querySelector("#quantity");
+// const finalPrice = document.querySelector(".text-right");
+
+// function calculateTotal(event) {
+//   event.preventDefault();
+
+//   const priceValue = price.value;
+//   const valueQuantity = userInput.value;
+//   const totalPrice = priceValue * valueQuantity;
+
+//   amount.textContent = valueQuantity;
+//   finalPrice.textContent = totalPrice;
+// }
+
+// 2.2 ПЕРЕПИШІТЬ КОД , ЩОБ ЗНАЧЕННЯ МИ ОТРИМУВАЛИ ПО КЛІЦІ НА КНОПКУ , ПРИ НАЖАТТІ ЯКОГО БУДЕ ВАМ РАХУВАТИ ТА ВИВОДИТИ РЕЗУЛЬТАТ НА ЕКРАН    <button class="btn">Calculate</button>
+
+// function inputCalculater(event) {
+//   const valueQuantity = userInput.value;
+//   amount.textContent = valueQuantity;
+// }
+
+// 2.3 НАПИШІТЬ  РАНДОМНИЙ КОЛІР ДЛЯ НАШОЇ ФОРМИ КОЛЬКУЛЯТОРА ЗА ДОПОМОГОЮ ІНЛАЙНОВОГО СТИЛЮ
+
+// const randomRgbColor = () => {
+//   const r = Math.round(Math.random() * (255 - 1) + 1);
+//   const g = Math.round(Math.random() * (255 - 1) + 1);
+//   const b = Math.round(Math.random() * (255 - 1) + 1);
+//   return `rgb(${r},${g},${b})`;
+// };
+
+// container.style.backgroundColor = randomRgbColor();
+
+// form.addEventListener("submit", calculateTotal);
+// form.addEventListener("input", inputCalculater);
