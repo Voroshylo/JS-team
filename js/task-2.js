@@ -96,24 +96,36 @@
 //  console.log(greet());
 
 //  Напишіть ф-цію capitalize , яка буде приймати рядок і буде повертати новий рядок , де кожне слово буде з великої букви
-console.log(capitalize('the quick brown fox'))// 'The Quick Brown Fox '
+// console.log(capitalize('the quick brown fox'))// 'The Quick Brown Fox '
 
-function capitalize (string){
-    const arrayFromString = string.split(" ")
-    let rey = [];
-    // console.log(arrayFromString);
-    for(const word of arrayFromString){
-        let up = word[0].toUpperCase()
-        console.log(up);
-        let restString = word.slice(1);
-        console.log(restString)
-        let final = `${up}${restString}`
-        console.log(final)
-        rey.push(final)
-    }
-    return rey.join(" ");
-    
+// function capitalize (string){
+//     const arrayFromString = string.split(" ")
+//     let rey = [];
+//     // console.log(arrayFromString);
+//     for(const word of arrayFromString){
+//         let up = word[0].toUpperCase()
+//         console.log(up);
+//         let restString = word.slice(1);
+//         console.log(restString)
+//         let final = `${up}${restString}`
+//         console.log(final)
+//         rey.push(final)
+//     }
+//     return rey.join(" ");
+// }
+// ЗАДАЧА 9
+// Напишіть функцію для роботи з колекцією навчаючих курсів courses:
 
+// addCourse(name) - добавляє курс у кінець колекції
+// removeCourse(name) - видаляє курс із колекції
+// updateCourse(oldName, newName)- змінює імя на нове
+// const courses = ["HTML", "CSS", "JavaScript", "React", "PostgreSQL"];
 
-
-}
+// // addCourse("Express"); // ['HTML', 'CSS', 'JavaScript', 'React', 'PostgreSQL', 'Express']
+// // addCourse("CSS"); // 'У вас уже є такий курс'
+// // removeCourse("React"); // ['HTML', 'CSS', 'JavaScript', 'PostgreSQL', 'Express']
+// // removeCourse("Vue"); // 'Курс з таким іменем не найдено'
+// // updateCourse("Express", "NestJS"); // ['HTML', 'CSS', 'JavaScript', 'PostgreSQL', 'NestJS']
+// console.log(courses);
+import car from "./data/car.js";
+console.log(car);
