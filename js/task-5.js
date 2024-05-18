@@ -36,8 +36,8 @@ const form = document.querySelector("#form");
 const input = document.querySelector("#input");
 const list = document.querySelector(".item-list");
 
-function addStorage(param) {
-    localStorage.setItem("param", JSON.stringify(param));
+function addStorage(listItems) {
+    localStorage.setItem("listItems", JSON.stringify(listItems));
 }
 
 form.addEventListener("submit", handleSubmit);
@@ -48,7 +48,7 @@ function handleSubmit(event) {
     itemList.textContent = value;
     list.appendChild(itemList);
 
-    const listItems = JSON.parse(localStorage.getItem("param")|| []);
+    const listItems = JSON.parse(localStorage.getItem("listItems")|| []);
 
     // if (!listItems) {
     //     return [];
