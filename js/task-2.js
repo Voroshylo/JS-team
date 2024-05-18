@@ -85,6 +85,7 @@
 // } else {
 //     console.log(false);
 // }
+
 // ЗАДАЧА 6
 // Напишіть ф-цію greet(name) , яка при виклику буде получати імя (як приклад , "Василь"), і логінувати рядок "Привіт, <імя>".У випадку , відсутнього 
 // відсутнього значення, виводе аргумент "Привіт , гість"
@@ -112,15 +113,20 @@
 //         rey.push(final)
 //     }
 //     return rey.join(" ");
+<<<<<<< HEAD
 // }
 // ЗАДАЧА 9
 // Напишіть функцію для роботи з колекцією навчаючих курсів courses:
+=======
+    
+>>>>>>> b0e518781a99c335e3f63444e0ee27fe13aeaa81
 
 // addCourse(name) - добавляє курс у кінець колекції
 // removeCourse(name) - видаляє курс із колекції
 // updateCourse(oldName, newName)- змінює імя на нове
 // const courses = ["HTML", "CSS", "JavaScript", "React", "PostgreSQL"];
 
+<<<<<<< HEAD
 // // addCourse("Express"); // ['HTML', 'CSS', 'JavaScript', 'React', 'PostgreSQL', 'Express']
 // // addCourse("CSS"); // 'У вас уже є такий курс'
 // // removeCourse("React"); // ['HTML', 'CSS', 'JavaScript', 'PostgreSQL', 'Express']
@@ -129,3 +135,11 @@
 // console.log(courses);
 import car from "./data/car.js";
 console.log(car);
+=======
+
+<<<<<<< HEAD
+}
+=======
+// }
+>>>>>>> 020101cd02bcc719cdf940b64926e4a923aac5e2
+>>>>>>> b0e518781a99c335e3f63444e0ee27fe13aeaa81
