@@ -31,6 +31,7 @@
 // 1)ПОЛУЧИТИ ДОСТУП ДО ЕЛЕМЕНТІВ ФОРМИ, ПРИ НАТИСКАННЯ НА КНОПОЧКУ ADD
 // 2)НА ОСНОВІ ДАНИХ ЯКІ МИ ВЗЯЛИ З ФОРМИ ВІДМАЛЮВАТИ ЕЛЕМЕНТИ СПИСКУ НА ЕКРАН ЗА ДОПОМОГОЮ КРЕЙТЕЛЕМЕНТ
 // 3)ДОДАЙ ЦЕЙ СПИСОК ДО ЛОКАЛ СТОРЕДЖ
+// 4)ДОДАЙ ДОДАТКОВИЙ ФУНКЦІОНАЛ, ЩОБ ПРИ ОНОВЛЕННІ СТОРІНКИ СПИСОК НЕ ВИДАЛЯВСЯ
 
 const form = document.querySelector("#form");
 const input = document.querySelector("#input");
@@ -48,7 +49,7 @@ function handleSubmit(event) {
     itemList.textContent = value;
     list.appendChild(itemList);
 
-    const listItems = JSON.parse(localStorage.getItem("listItems")|| []);
+    const listItems = JSON.parse(localStorage.getItem("listItems"))|| [];
 
     // if (!listItems) {
     //     return [];
