@@ -37,7 +37,7 @@ const input = document.querySelector("#input");
 const list = document.querySelector(".item-list");
 
 function addStorage(param) {
-    localStorage.setItem("point", JSON.stringify(param));
+    localStorage.setItem("param", JSON.stringify(param));
 }
 
 form.addEventListener("submit", handleSubmit);
@@ -48,11 +48,11 @@ function handleSubmit(event) {
     itemList.textContent = value;
     list.appendChild(itemList);
 
-    const listItems = JSON.parse(localStorage.getItem("point"));
+    const listItems = JSON.parse(localStorage.getItem("param")|| []);
 
-    if (!listItems) {
-        return [];
-    }
+    // if (!listItems) {
+    //     return [];
+    // }
     listItems.push(value)
     addStorage(listItems);
 }
